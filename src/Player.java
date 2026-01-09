@@ -4,14 +4,14 @@
 public class Player {
 
 
-    // Attributes :
-    String name = "";
-    int health  = 0;
-    int damager = 0;
-    int defense = 0;
+    // Atributos :
+    String nome  = "";
+    int vida     = 0;
+    int dano     = 0;
+    int defesa   = 0;
 
 
-    // Methods :
+    // Metodos :
 
 
 }

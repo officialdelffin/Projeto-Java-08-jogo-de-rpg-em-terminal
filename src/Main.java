@@ -5,14 +5,25 @@ O projeto se trata de um jogo de RPG feito no terminal onde o usuário joga atra
 efetuar ataque, se curar e envenenar o adiversário. */
 
 
+import java.sql.SQLOutput;
+
+
+// Class
 public class Main {
 
 
     public static void main(String[] args) {
 
 
+        // Texto de apresentação :
+        System.out.println( "Seja bem-vindo ao meu jogo de RPG" );
 
+
+        // Texto que pede para criadar o personagem :
+        System.out.println( "Antes de começar o game vamos criar o seu personsagem. Me informe qual o nome do seu personagem" );
 
 
     }
+
+
 }
