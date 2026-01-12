@@ -13,14 +13,14 @@ import java.util.Scanner;
 public class Main {
 
 
-    public static void main(String[] args) {
+    public static void main( String[] args ) {
 
 
-        // Criando o objeto de input do usuário :
+        // Instanciando o objeto de input do usuário :
         Scanner inputUsuario = new Scanner( System.in );
 
 
-        // Criando o objeto personagem :
+        // Instanciando o objeto personagem :
         Player personagem = new Player();
 
 
@@ -36,7 +36,18 @@ public class Main {
         personagem.nome = inputUsuario.nextLine();
 
 
+        // Texto que pede para o usuário escolher a classe do personagem :
         System.out.println( "Me informe a classe do personagem entre Espadachim - Guerreiro" );
+        System.out.println( "Digite 1 para escolher a classe de Espadachim" );
+        System.out.println( "Digite 2 para escolher a classe de Guerreiro" );
+
+
+        // Armazenando classe do personagem :
+        personagem.classe = inputUsuario.nextInt();
+
+
+        // Chamando metodo que distribui os pontos com base  na classe :
+        personagem.distribuiClasse();
 
 
     }

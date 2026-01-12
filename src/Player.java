@@ -13,7 +13,7 @@ public class Player {
 
 
     // Verifica e distribui pontos com base na classe :
-    public void verificaClasse () {
+    public void distribuiClasse () {
 
 
         // Se a classe for Espadachim :
