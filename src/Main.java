@@ -36,6 +36,9 @@ public class Main {
         personagem.nome = inputUsuario.nextLine();
 
 
+        System.out.println( "Me informe a classe do personagem entre Espadachim - Guerreiro" );
+
+
     }
 
 
