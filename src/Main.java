@@ -6,6 +6,7 @@ efetuar ataque, se curar e envenenar o adiversário. */
 
 
 import java.sql.SQLOutput;
+import java.util.Scanner;
 
 
 // Class
@@ -15,12 +16,24 @@ public class Main {
     public static void main(String[] args) {
 
 
+        // Criando o objeto de input do usuário :
+        Scanner inputUsuario = new Scanner( System.in );
+
+
+        // Criando o objeto personagem :
+        Player personagem = new Player();
+
+
         // Texto de apresentação :
         System.out.println( "Seja bem-vindo ao meu jogo de RPG" );
 
 
         // Texto que pede para criadar o personagem :
         System.out.println( "Antes de começar o game vamos criar o seu personsagem. Me informe qual o nome do seu personagem" );
+
+
+        // Armazenando nome do personagem :
+        personagem.nome = inputUsuario.nextLine();
 
 
     }
