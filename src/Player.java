@@ -1,5 +1,4 @@
 
-
 // Classe que define os atributos e métodos do player :
 public class Player {
 

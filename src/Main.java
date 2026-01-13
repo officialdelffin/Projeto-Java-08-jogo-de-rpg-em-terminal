@@ -64,16 +64,21 @@ public class Main {
                 """ , personagem.nome , personagem.vida , personagem.dano , personagem.defesa );
 
 
-        // Texto com breve história :
+        // Texto com breve história e introdução ao combate :
         System.out.printf("""
                 
                 O silêncio da noite é quebrado apenas pelo som dos seus passos. Nas tabernas, todos já ouviram falar de %s, mas poucos acreditam que as lendas sejam reais.
-                
-                Enquanto você atravessa o vale, a temperatura cai bruscamente e uma névoa densa bloqueia o caminho. De repente, uma silhueta colossal de cinco metros de altura se materializa à sua frente. As sombras se retorcem formando garras e asas: é o Demônio das Sombras.
+
+                Enquanto você atravessa o vale, a temperatura cai bruscamente e uma névoa densa bloqueia o caminho. De repente, uma silhueta colossal de cinco metros de altura se materializa à sua
+                frente. As sombras se retorcem formando garras e asas: é o Demônio das Sombras.
                 
                 O monstro solta um rugido que faz a terra tremer. %s, desembainhe sua arma! Não há mais volta, o combate por turnos começa agora!
                 
                 """ ,  personagem.nome , personagem.nome );
+
+
+
+
 
 
     }
