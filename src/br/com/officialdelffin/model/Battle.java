@@ -1,3 +1,4 @@
+package br.com.officialdelffin.model;
 
 // Classe que é responsável pelos métodos de batalha :
 public class Battle {

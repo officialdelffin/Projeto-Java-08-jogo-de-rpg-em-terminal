@@ -5,7 +5,8 @@ O projeto se trata de um jogo de RPG feito no terminal onde o usuário joga atra
 efetuar ataque, se curar e envenenar o adiversário. */
 
 
-import java.sql.SQLOutput;
+import br.com.officialdelffin.model.Player;
+
 import java.util.Scanner;
 
 
@@ -75,10 +76,6 @@ public class Main {
                 O monstro solta um rugido que faz a terra tremer. %s, desembainhe sua arma! Não há mais volta, o combate por turnos começa agora!
                 
                 """ ,  personagem.nome , personagem.nome );
-
-
-
-
 
 
     }
