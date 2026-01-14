@@ -6,7 +6,6 @@ efetuar ataque, se curar e envenenar o adiversário. */
 
 
 import br.com.officialdelffin.model.Player;
-
 import java.util.Scanner;
 
 
@@ -17,10 +16,6 @@ public class Main {
     public static void main( String[] args ) {
 
 
-        // Instanciando o objeto de input do usuário :
-        Scanner inputUsuario = new Scanner( System.in );
-
-
         // Instanciando o objeto personagem :
         Player personagem = new Player();
 
@@ -29,40 +24,8 @@ public class Main {
         System.out.println( "Seja bem-vindo ao meu jogo de RPG \n" );
 
 
-        // Texto que pede para criadar o personagem :
-        System.out.println( "Antes de começar o game vamos criar o seu personsagem. Me informe qual o nome do seu personagem \n" );
-
-
-        // Armazenando nome do personagem :
-        personagem.nome = inputUsuario.nextLine();
-        System.out.println( " " );
-
-
-        // Texto que pede para o usuário escolher a classe do personagem :
-        System.out.println( "Me informe a classe do personagem entre Espadachim - Guerreiro \n" );
-        System.out.println( "Digite 1 para escolher a classe de Espadachim" );
-        System.out.println( "Digite 2 para escolher a classe de Guerreiro \n" );
-
-
-        // Armazenando classe do personagem :
-        personagem.classe = inputUsuario.nextInt();
-
-
-        // Chamando metodo que distribui os pontos com base  na classe :
-        personagem.distribuiClasse();
-
-
-        // Verificando se a distribuição foi feita corretamente :
-        System.out.printf("""
-                
-                Distribuição de pontos :
-                
-                Nome   : %s
-                Vida   : %d
-                Dano   : %d
-                Defesa : %d
-                
-                """ , personagem.nome , personagem.vida , personagem.dano , personagem.defesa );
+        // Chamando o metodo para cria o personagem e distribuir pontos com base na classe :
+        personagem.criaPersonagem();
 
 
         // Texto com breve história e introdução ao combate :
@@ -75,7 +38,7 @@ public class Main {
                 
                 O monstro solta um rugido que faz a terra tremer. %s, desembainhe sua arma! Não há mais volta, o combate por turnos começa agora!
                 
-                """ ,  personagem.nome , personagem.nome );
+                """ ,  personagem.getNome() , personagem.getNome() );
 
 
     }
