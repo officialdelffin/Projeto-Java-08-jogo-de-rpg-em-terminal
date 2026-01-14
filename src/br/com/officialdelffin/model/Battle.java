@@ -7,14 +7,14 @@ public class Battle {
     // Atributos :
 
     // Atributos do personagem :
-    int vidaPersonagem = 0;
-    int danoPersonagem = 0;
+    int vidaPersonagem   = 0;
+    int danoPersonagem   = 0;
     int defesaPersonagem = 0;
 
 
     // Atributos do rival :
-    int vidaRival = 0;
-    int danoRival = 0;
+    int vidaRival   = 0;
+    int danoRival   = 0;
     int defesaRival = 0;
 
 

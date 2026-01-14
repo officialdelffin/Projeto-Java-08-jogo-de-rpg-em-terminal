@@ -110,6 +110,8 @@ public class Player {
     }
 
 
+    // Métodos que faz apenas informa qual é o dados dos atributos :
+
     // Exibir nome do personagem :
     public String getNome () {
 
@@ -117,6 +119,34 @@ public class Player {
         return nome;
 
     }
+
+
+    // Exibir vida do personagem :
+    public int getVida () {
+
+
+        return vida;
+
+    }
+
+
+    // Exibir dano do personagem :
+    public int getDano () {
+
+
+        return dano;
+
+    }
+
+    // Exibir defesa do personagem :
+    public int getDefesa () {
+
+
+        return defesa;
+
+    }
+
+
 
 
 }
