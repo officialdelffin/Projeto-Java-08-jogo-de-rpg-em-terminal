@@ -54,6 +54,11 @@ public class Battle {
         defesaRival       = defesaRivalP;
 
 
+        // Exibir dados para ver se funcionou :
+        System.out.println( "Nome do personagem : " + nomePersonagem );
+        System.out.println( "Nome do rival : " + nomeRival );
+
+
     }
 
 
