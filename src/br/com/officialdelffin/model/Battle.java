@@ -63,7 +63,13 @@ public class Battle {
         while ( vidaPersonagem > 0 && vidaRival > 0 ) {
 
 
-
+            System.out.printf("""
+                    
+                    Vida do %s  : %d
+                    Vida do %s  : %d
+                    
+                    
+                    """ );
 
 
         }
