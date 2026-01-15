@@ -93,7 +93,21 @@ public class Battle {
                     
                     """ );
 
+
             // Recebendo a escolha do usuário :
+            escolhaUSuario = inputUsuario.nextInt();
+
+
+            // Se a escolha do usuário for 1 faça :
+            if ( escolhaUSuario == 1 ) {}
+
+
+            // Se a escolha do usuário for 2 faça :
+            else if ( escolhaUSuario == 2 ) {}
+
+
+            // Se a escolha do usuário for 3 faça :
+            else if ( escolhaUSuario == 3 ) {}
 
 
         }
