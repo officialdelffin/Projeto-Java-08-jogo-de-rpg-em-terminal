@@ -59,6 +59,16 @@ public class Battle {
         System.out.println( "Nome do rival : " + nomeRival );
 
 
+        // Enquanto a vida do player ou a do inimigo for menor ou igual a zero ele vai rodar em loop:
+        while ( vidaPersonagem > 0 && vidaRival > 0 ) {
+
+
+
+
+
+        }
+
+
     }
 
 
