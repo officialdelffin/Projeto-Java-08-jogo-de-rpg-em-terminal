@@ -13,17 +13,17 @@ public class Battle {
     // Atributos :
 
     // Atributos do personagem :
-    String nomePersonagem  = "";
-    int vidaPersonagem     = 0;
-    int danoPersonagem     = 0;
-    int defesaPersonagem   = 0;
+    private String nomePersonagem  = "";
+    private int vidaPersonagem     = 0;
+    private int danoPersonagem     = 0;
+    private int defesaPersonagem   = 0;
 
 
     // Atributos do rival :
-    String nomeRival  = "";
-    int vidaRival     = 0;
-    int danoRival     = 0;
-    int defesaRival   = 0;
+    private String nomeRival  = "";
+    private int vidaRival     = 0;
+    private int danoRival     = 0;
+    private int defesaRival   = 0;
 
 
     // Atributo da escolha do usuário :
@@ -86,7 +86,7 @@ public class Battle {
             // Pedindo o usuário para escolher o que ele quer executar :
             System.out.printf("""
                     
-                    Digite o número do que deseja fazer : 
+                    Digite o número do que deseja fazer :
                     
                     1 - Atacar
                     2 - Defender
