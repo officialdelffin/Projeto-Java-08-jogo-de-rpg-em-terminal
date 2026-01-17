@@ -123,16 +123,33 @@ public class Battle {
                 vidaRival = vidaRival - restoDanoPersonagem;
 
 
-                // Texto que avisa que o contra ataque do rival foi para executado :
-                System.out.printf("""
+                if ( vidaRival != 0 ) {
+
+
+                    // Texto que avisa que o contra ataque do rival foi para executado :
+                    System.out.printf("""
                         
                         %s contraatacou e causou %d de dano em %s 
                         
                         """ , nomeRival , restoDanoRival , nomePersonagem );
 
 
-                // Definindo a vida do rival após o ataque :
-                vidaPersonagem = vidaPersonagem - restoDanoRival;
+                    // Definindo a vida do rival após o ataque :
+                    vidaPersonagem = vidaPersonagem - restoDanoRival;
+
+
+                }
+
+
+                // Se a vida do rival chegar a 0 ele não contraataca :
+                else if ( vidaRival == 0 ) {
+
+
+                    // Encerra o loop :
+                    break;
+
+
+                }
 
 
             }
