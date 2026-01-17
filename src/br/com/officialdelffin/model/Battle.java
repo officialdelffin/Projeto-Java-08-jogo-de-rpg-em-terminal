@@ -64,16 +64,17 @@ public class Battle {
         defesaRival       = defesaRivalP;
 
 
-        // Exibir dados para ver se funcionou :
-        System.out.println( "Nome do personagem : " + nomePersonagem );
-        System.out.println( "Nome do rival : " + nomeRival );
-
 
         // Enquanto a vida do player ou a do inimigo for menor ou igual a zero ele vai rodar em loop:
         while ( vidaPersonagem > 0 && vidaRival > 0 ) {
 
 
+
+            // Mostrando status do personagem :
             System.out.printf("""
+                    
+                    Status da batalha :
+                    
                     
                     Vida do %s  : %d
                     Vida do %s  : %d
@@ -99,7 +100,42 @@ public class Battle {
 
 
             // Se a escolha do usuário for 1 faça :
-            if ( escolhaUSuario == 1 ) {}
+            if ( escolhaUSuario == 1 ) {
+
+
+                // Colocando o efeito de defesa no dano do personagem :
+                int restoDanoPersonagem = danoPersonagem - defesaRival;
+
+
+                // Colocando o efeito de defesa no dano do personagem :
+                int restoDanoRival = danoRival - defesaPersonagem;
+
+
+                // Texto que avisa que o ataque foi para executado :
+                System.out.printf("""
+                        
+                        %s atacou e causou %d de dano em %s 
+                        
+                        """ , nomePersonagem , restoDanoPersonagem , nomeRival );
+
+
+                // Definindo a vida do rival após o ataque :
+                vidaRival = vidaRival - restoDanoPersonagem;
+
+
+                // Texto que avisa que o contra ataque do rival foi para executado :
+                System.out.printf("""
+                        
+                        %s contraatacou e causou %d de dano em %s 
+                        
+                        """ , nomeRival , restoDanoRival , nomePersonagem );
+
+
+                // Definindo a vida do rival após o ataque :
+                vidaPersonagem = vidaPersonagem - restoDanoRival;
+
+
+            }
 
 
             // Se a escolha do usuário for 2 faça :
@@ -108,6 +144,29 @@ public class Battle {
 
             // Se a escolha do usuário for 3 faça :
             else if ( escolhaUSuario == 3 ) {}
+
+
+        }
+
+
+        // Se o personagem ganhar :
+        if ( vidaRival <= 0 ) {
+
+
+            // Exibe texto falando que o personagem :
+            System.out.println( nomePersonagem + " derrotou " + nomeRival +  ". Vitória!" );
+
+
+
+        }
+
+
+        // Se o personagem perder :
+        else if ( vidaPersonagemP <= 0 ) {
+
+
+            // Exibe texto falando que o personagem :
+            System.out.println( nomeRival + " derrotou " + nomePersonagem  + ". Derrota!" );
 
 
         }
